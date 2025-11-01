@@ -22,12 +22,12 @@ emotion-chatbot/
     emotion_model.pkl  # created on first run
 ```
 
-## Setup (Windows PowerShell)
+## Setup 
 1. Navigate to the project directory:
    ```powershell
    cd "$HOME\Desktop\newos\emotion-chatbot"
    ```
-2. (Optional but recommended) Create and activate a virtual environment:
+2. Create and activate a virtual environment:
    ```powershell
    python -m venv .venv
    .\.venv\Scripts\Activate.ps1
@@ -42,10 +42,7 @@ emotion-chatbot/
    ```
 5. Open `http://localhost:5000` in your browser.
 
-## Notes
-- On the first run, if `model/emotion_model.pkl` is missing, the app will train a quick baseline model using `model/emotion_dataset_sample.csv` and save it.
-- For better accuracy, replace `emotion_dataset_sample.csv` with a larger dataset (same columns: `text,emotion`) and delete `emotion_model.pkl` to trigger retraining.
 
-## Resume Bullet
-- Built an end-to-end emotion-aware chatbot using Python Flask and scikit-learn. Implemented NLP preprocessing, TF-IDF features, and Logistic Regression for emotion classification; integrated a responsive web UI and automated model training pipeline.
+
+
 
